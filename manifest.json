@@ -1,0 +1,94 @@
+{
+    "schemaVersion":  1,
+    "suite":  "Samsung Root Extended",
+    "release":  "v1.3.0",
+    "generatedAt":  "2026-06-05T20:01:51Z",
+    "github":  {
+                   "owner":  "Niklas26903",
+                   "repository":  "SamsungRootExtended",
+                   "releaseTag":  "v1.3.0"
+               },
+    "requirements":  [
+                         {
+                             "id":  "root",
+                             "name":  "Root / su",
+                             "installer":  "manual",
+                             "verify":  "adb shell su -c id"
+                         },
+                         {
+                             "id":  "magisk",
+                             "name":  "Magisk",
+                             "installer":  "manual",
+                             "verify":  "adb shell su -c magisk -v"
+                         },
+                         {
+                             "id":  "zygisk",
+                             "name":  "Zygisk or compatible standalone",
+                             "installer":  "manual_or_magisk",
+                             "verify":  "Magisk settings or compatible module"
+                         },
+                         {
+                             "id":  "lsposed",
+                             "name":  "LSPosed",
+                             "installer":  "github_release",
+                             "verify":  "org.lsposed.manager + lspd process"
+                         }
+                     ],
+    "assets":  [
+                   {
+                       "id":  "local.niklas26903.samsungrootextended",
+                       "name":  "Samsung Root Extended Manager",
+                       "type":  "apk",
+                       "version":  "1.3.2",
+                       "versionCode":  33,
+                       "file":  "Samsung-Root-Extended-Manager.apk",
+                       "url":  "https://github.com/Niklas26903/SamsungRootExtended/releases/download/v1.3.0/Samsung-Root-Extended-Manager.apk",
+                       "sha256":  "70a3481dcb3f4d09cca8de5e053808bc7d7b94bb6fe5ebee8e500125bdf035f9",
+                       "size":  80165
+                   },
+                   {
+                       "id":  "main_profile_spoofer_generic",
+                       "name":  "Main Profile Spoofer",
+                       "type":  "magisk",
+                       "version":  "1.0.0",
+                       "versionCode":  1,
+                       "file":  "Samsung-Root-Extended-Main-Profile-Spoofer.zip",
+                       "url":  "https://github.com/Niklas26903/SamsungRootExtended/releases/download/v1.3.0/Samsung-Root-Extended-Main-Profile-Spoofer.zip",
+                       "sha256":  "23b50f1c064b909db2f6192b11bb6f7c29039adfdee3d3e1c0cd9de7e0f6fdfc",
+                       "size":  1870
+                   },
+                   {
+                       "id":  "work_profile_bypass",
+                       "name":  "Work Profile Bypass",
+                       "type":  "magisk",
+                       "version":  "1.0.0",
+                       "versionCode":  1,
+                       "file":  "Samsung-Root-Extended-Work-Profile-Bypass.zip",
+                       "url":  "https://github.com/Niklas26903/SamsungRootExtended/releases/download/v1.3.0/Samsung-Root-Extended-Work-Profile-Bypass.zip",
+                       "sha256":  "0ac63134a51cd65594bdcc1af03650c3064cea0343947a7d8e53a6b2d6ea0024",
+                       "size":  12129772
+                   },
+                   {
+                       "id":  "local.niklas26903.workprofilespoofer",
+                       "name":  "Work Profile Spoofer",
+                       "type":  "apk",
+                       "version":  "1.0.0",
+                       "versionCode":  0,
+                       "file":  "Samsung-Root-Extended-Work-Profile-Spoofer.apk",
+                       "url":  "https://github.com/Niklas26903/SamsungRootExtended/releases/download/v1.3.0/Samsung-Root-Extended-Work-Profile-Spoofer.apk",
+                       "sha256":  "ac1b820b5e822549b0c47fc623539367284edde998cc1c6175dff1c8b97db819",
+                       "size":  12762
+                   },
+                   {
+                       "id":  "local.niklas26903.workprofileisolation",
+                       "name":  "Work Profile Isolation",
+                       "type":  "apk",
+                       "version":  "1.0.0",
+                       "versionCode":  0,
+                       "file":  "Samsung-Root-Extended-Work-Profile-Isolation.apk",
+                       "url":  "https://github.com/Niklas26903/SamsungRootExtended/releases/download/v1.3.0/Samsung-Root-Extended-Work-Profile-Isolation.apk",
+                       "sha256":  "a163dc1a9ece964c377381decc77677f5665353878164cfbc16d4e6bd1f9cfdf",
+                       "size":  12761
+                   }
+               ]
+}
